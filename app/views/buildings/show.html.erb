@@ -1,0 +1,11 @@
+<h1><%= @building.name %> </h1>
+
+<h4> Country | <%= @building.country %> </h4>
+
+<h4> Address | <%= @building.address %> </h4>
+
+<h4> Total Rent |  $<%= @total_rent %> </h4>
+
+<%= button_to "Edit",  edit_building_path(@building.id), method: :get %>
+
+<%= button_to "Destroy", @building, method: :delete %>

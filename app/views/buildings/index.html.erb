@@ -1,0 +1,8 @@
+<h1> Buildings!!!! </h1>
+<br>
+
+<ol>
+<% @buildings.each do |building| %>
+     <%= link_to building.name, building %> | Floors Availiable: <%= building.avail%><br>
+<% end %>
+</ol>
